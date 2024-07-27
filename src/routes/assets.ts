@@ -51,6 +51,10 @@ function register(app: express.Application) {
       express.static(path.join(srcRoot, '..', 'node_modules/katex/dist/')));
     app.use(`/${assetPath}/node_modules/katex/dist/`,
       persistentCacheStatic(path.join(srcRoot, '..', 'node_modules/katex/dist/')));
+    // ketcher
+    app.use(`/${assetPath}/node_modules/ketcher-core/dist/`, persistentCacheStatic(path.join(srcRoot, '..', 'node_modules/ketcher-core/dist/')));
+    app.use(`/${assetPath}/node_modules/ketcher-react/dist/`, persistentCacheStatic(path.join(srcRoot, '..', 'node_modules/ketcher-react/dist/')));
+
 
     app.use(`/${assetPath}/node_modules/dayjs/`, persistentCacheStatic(path.join(srcRoot, '..', 'node_modules/dayjs/')));
     app.use(`/${assetPath}/node_modules/force-graph/dist/`, persistentCacheStatic(path.join(srcRoot, '..', 'node_modules/force-graph/dist/')));

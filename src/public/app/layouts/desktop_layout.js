@@ -80,10 +80,15 @@ import MovePaneButton from "../widgets/buttons/move_pane_button.js";
 import UploadAttachmentsDialog from "../widgets/dialogs/upload_attachments.js";
 import CopyImageReferenceButton from "../widgets/floating_buttons/copy_image_reference_button.js";
 import ScrollPaddingWidget from "../widgets/scroll_padding.js";
+import CopyCodeBlock from "../widgets/copy_code_block.js";
+import Ketcher from "../widgets/ketcher.js";
+
 
 export default class DesktopLayout {
     constructor(customWidgets) {
+
         this.customWidgets = customWidgets;
+        console.log(this.customWidgets.byParent);
     }
 
     getRootWidget(appContext) {
@@ -186,6 +191,8 @@ export default class DesktopLayout {
                                     )
                             )
                         )
+                        .child(new CopyCodeBlock())
+                        .child(new Ketcher())
                         .child(...this.customWidgets.get('center-pane'))
                     )
                     .child(new RightPaneContainer()

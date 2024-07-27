@@ -60,6 +60,8 @@
     "dayjs": "^1.11.12",
     "dayjs-plugin-utc": "0.1.2",
     "debounce": "^2.1.0",
+    "ketcher-core": "file:./plugs/dist/ketcher-core",
+    "ketcher-react": "file:./plugs/dist/ketcher-react",
     "ejs": "^3.1.10",
     "electron-debug": "3.2.0",
     "electron-dl": "3.5.2",

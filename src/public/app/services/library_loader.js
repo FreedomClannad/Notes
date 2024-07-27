@@ -66,6 +66,18 @@ const EXCALIDRAW = {
     ]
 };
 
+const KETCHER = {
+    js: [
+        "node_modules/react/umd/react.production.min.js",
+        "node_modules/react-dom/umd/react-dom.production.min.js",
+        "node_modules/ketcher-core/dist/index.js",
+        "node_modules/ketcher-react/dist/index.js",
+    ],
+    css: [
+        "node_modules/ketcher-react/dist/index.css"
+    ]
+}
+
 const MARKJS = {
     js: [
         "libraries/jquery.mark.es6.min.js"
@@ -136,6 +148,7 @@ export default {
     FORCE_GRAPH,
     MERMAID,
     EXCALIDRAW,
+    KETCHER,
     MARKJS,
     I18NEXT
 }

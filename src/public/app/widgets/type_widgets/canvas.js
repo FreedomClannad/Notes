@@ -139,7 +139,9 @@ export default class ExcalidrawTypeWidget extends TypeWidget {
         libraryLoader
             .requireLibrary(libraryLoader.EXCALIDRAW)
             .then(() => {
+                console.log(window);
                 const React = window.React;
+                console.log(React);
                 const ReactDOM = window.ReactDOM;
                 const renderElement = this.$render.get(0);
 

@@ -9,6 +9,8 @@ import DesktopLayout from "./layouts/desktop_layout.js";
 import glob from "./services/glob.js";
 
 bundleService.getWidgetBundlesByParent().then(widgetBundles => {
+    console.log(widgetBundles);
+    console.log("222333")
     appContext.setLayout(new DesktopLayout(widgetBundles));
     appContext.start();
 });
